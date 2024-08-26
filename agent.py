@@ -17,7 +17,14 @@ class Agent:
         # TODO: model, trainer
 
     def get_state(self,game):
-        pass
+        head = game.snake[0]
+        point_l = Point(head.x - 20, head.y)
+        point_r = Point(head.x + 20, head.y)
+        point_u = Point(head.x, head.y - 20)
+        point_d = Point(head.x, head.y + 20)
+
+
+
     def remember(self,state,action,reward,next_state,done):
         pass
     def train_long_memory(self):
@@ -61,7 +68,7 @@ def train():
                 # agent.model.save()
             print('Game',agent.n_games,'Score',score,'Record:',record)
 
-            
+            # TODO: plot
 
 
 if __name__ == '__main__'
