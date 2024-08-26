@@ -28,7 +28,13 @@ class Agent:
         pass
     
 def train():
-    pass
+    plot_scores = []
+    plot_mean_scores = []
+    total_score = 0
+    record = 0
+    agent = Agent()
+    game = SnakeGameAI()
 
 if __name__ == '__main__'
     train()
+
