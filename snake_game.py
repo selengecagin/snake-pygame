@@ -116,3 +116,7 @@ class SnakeGame:
         text = font.render("Score: " + str(self.score), True, WHITE)
         self.display.blit(text, [0, 0])
         pygame.display.flip()
+        
+    def _move(self, direction):
+    x = self.head.x
+    y = self.head.y
