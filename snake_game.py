@@ -93,3 +93,6 @@ class SnakeGame:
 
      # 6 - return game over and score
     return game_over, self.score
+
+    def _is_collision(self):
+        
