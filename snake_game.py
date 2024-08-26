@@ -24,3 +24,8 @@ BLACK = (0,0,0)
 
 BLOCK_SIZE = 20
 SPEED = 20
+
+class SnakeGame:
+    def __init__(self, w=640, h=480):
+        self.w = w
+        self.h = h
