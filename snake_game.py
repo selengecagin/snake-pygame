@@ -2,6 +2,7 @@ import pygame
 import random
 from enum import Enum
 from collections import namedtuple
+import numpy as np
 
 pygame.init()
 font = pygame.font.Font('arial.ttf', 25)
@@ -128,6 +129,9 @@ class SnakeGameAI:
         clock_wise = [Direction.RIGHT, Direction.DOWN, Direction.LEFT, Direction.UP]
         idx = clock_wise.index(self.direction)
 
+        if np.array_equal(action,[1,0,0]):
+            new_dir = clock_wise[idx] # no change
+    
         x = self.head.x
         y = self.head.y
         if direction == Direction.RIGHT:
