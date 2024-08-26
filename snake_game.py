@@ -115,3 +115,6 @@ class SnakeGame:
 
     text = font.render("Score: " + str(self.score), True, WHITE)
     self.display.blit(text, [0, 0])
+
+    pygame.display.flip()
+    
