@@ -48,4 +48,5 @@ class SnakeGame:
         self._place_food()
 
     def _place_food(self):
-        
+       x = random.randint(0, (self.w-BLOCK_SIZE )//BLOCK_SIZE )*BLOCK_SIZE 
+       y = random.randint(0, (self.h-BLOCK_SIZE )//BLOCK_SIZE )*BLOCK_SIZE
