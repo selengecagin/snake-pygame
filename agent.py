@@ -81,7 +81,10 @@ class Agent:
         self.trainer.train_step(state, action, reward, next_state, done)
 
     def get_action(self,state):
-        pass
+        # random moves: tradeoff exploration / exploitation
+        self.epsilon = 80 - self.n_games
+        final_move = [0,0,0]
+
     
 def train():
     plot_scores = []
