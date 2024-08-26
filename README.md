@@ -38,3 +38,26 @@ This project implements an AI agent that learns to play the classic Snake game u
 
 ## Usage
 -----
+To install the Snake Game AI, please follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install the required dependencies by running the following command:
+   ```
+   pip install pygame torch matplotlib numpy
+   ```
+3. Run the `agent.py` file using the Streamlit CLI. Execute the following command:
+     ```
+   python agent.py
+   ```
+
+
+
+
+
+
+
+
+
+
+
+
