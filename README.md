@@ -45,7 +45,7 @@ To install the Snake Game AI, please follow these steps:
    ```
    pip install pygame torch matplotlib numpy
    ```
-3. Run the `agent.py` file using the Streamlit CLI. Execute the following command:
+3. Run the `agent.py` file, execute the following command:
      ```
    python agent.py
    ```
