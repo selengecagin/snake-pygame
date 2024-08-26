@@ -102,3 +102,4 @@ class SnakeGame:
         # hits itself
         if self.head in self.snake[1:]:
         return True
+    return False
