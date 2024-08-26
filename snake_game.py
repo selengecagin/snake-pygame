@@ -112,3 +112,6 @@ class SnakeGame:
     pygame.draw.rect(self.display, BLUE2, pygame.Rect(pt.x+4, pt.y+4, BLOCK_SIZE, BLOCK_SIZE))
 
     pygame.draw.rect(self.display, RED, pygame.Rect(self.food.x + 4, self.food.y + 4, BLOCK_SIZE, BLOCK_SIZE))
+
+    text = font.render("Score: " + str(self.score), True, WHITE)
+    self.display.blit(text, [0, 0])
