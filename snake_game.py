@@ -73,3 +73,9 @@ class SnakeGame:
     # 2 - move
     self._move(self.direction) # update the head
     self.snake.insert(0, self.head)
+
+    # 3 - check if game over - collision detection
+    game_over = False
+    if self._is_collision():
+        game_over = True
+        return game_over, self.score
