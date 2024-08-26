@@ -80,9 +80,13 @@ class SnakeGame:
         game_over = True
         return game_over, self.score
 
-    # 4. place new food or just move
+    # 4 - place new food or just move
     if self.head == self.food:
         self.score += 1
         self._place_food()
     else:
         self.snake.pop()
+
+    # 5 - update ui and clock
+    self._update_ui()
+    self.clok.tick(SPEED)
