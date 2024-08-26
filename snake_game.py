@@ -90,3 +90,6 @@ class SnakeGame:
     # 5 - update ui and clock
     self._update_ui()
     self.clock.tick(SPEED)
+
+     # 6 - return game over and score
+    return game_over, self.score
