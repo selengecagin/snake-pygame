@@ -69,3 +69,7 @@ class SnakeGame:
                 self.direction = Direction.UP
             elif event.key == pygame.K_DOWN:
                 self.direction = Direction.DOWN
+
+    # 2 - move
+    self._move(self.direction) # update the head
+    self.snake.insert(0, self.head)
