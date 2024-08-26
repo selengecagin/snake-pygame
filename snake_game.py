@@ -43,3 +43,5 @@ class SnakeGame:
                       Point(self.head.x-(2*BLOCK_SIZE), self.head.y)]
         self.score = 0
         self.food = None
+
+        self._place_food()
