@@ -107,9 +107,9 @@ class SnakeGame:
     def _update_ui(self):
     self.display.fill(BLACK)
 
-    for pt in self.snake:
-    pygame.draw.rect(self.display, BLUE1, pygame.Rect(pt.x, pt.y, BLOCK_SIZE, BLOCK_SIZE))
-    pygame.draw.rect(self.display, BLUE2, pygame.Rect(pt.x+4, pt.y+4, BLOCK_SIZE, BLOCK_SIZE))
+  for pt in self.snake:
+        pygame.draw.rect(self.display, BLUE1, pygame.Rect(pt.x, pt.y, BLOCK_SIZE, BLOCK_SIZE))
+        pygame.draw.rect(self.display, BLUE2, pygame.Rect(pt.x+4, pt.y+4, 12, 12))
 
     pygame.draw.rect(self.display, RED, pygame.Rect(self.food.x + 4, self.food.y + 4, BLOCK_SIZE, BLOCK_SIZE))
 
@@ -117,4 +117,3 @@ class SnakeGame:
     self.display.blit(text, [0, 0])
 
     pygame.display.flip()
-    
