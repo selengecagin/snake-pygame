@@ -126,7 +126,7 @@ class SnakeGameAI:
     def _move(self, action):
         #[straight,right,left]
         clock_wise = [Direction.RIGHT, Direction.DOWN, Direction.LEFT, Direction.UP]
-        idx = clock_wse.index(self.direction)
+        idx = clock_wise.index(self.direction)
 
         x = self.head.x
         y = self.head.y
