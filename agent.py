@@ -28,6 +28,13 @@ class Agent:
         dir_u = game.direction == Direction.UP
         dir_d = game.direction == Direction.DOWN
 
+        state = [
+            # Danger straight
+            # Danger right
+            # Danger left
+            # Move direction
+            # Food location 
+              ]
 
     def remember(self,state,action,reward,next_state,done):
         pass
