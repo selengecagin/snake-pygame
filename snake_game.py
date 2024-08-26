@@ -103,3 +103,6 @@ class SnakeGame:
             return True
      
         return False
+
+    def _update_ui(self):
+    self.display.fill(BLACK)
