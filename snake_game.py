@@ -7,6 +7,12 @@ pygame.init()
 font = pygame.font.Font('arial.ttf', 25)
 #font = pygame.font.SysFont('arial', 25)
 
+# reset func. - after each game our agent should be able to reset the game
+# implement reward agent gets
+# change play(action) func -> compute direction
+# keep track of the current frame - game iteration
+# create func. to check collision - is_collision
+
 class Direction(Enum):
     RIGHT = 1
     LEFT = 2
