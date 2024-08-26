@@ -89,4 +89,4 @@ class SnakeGame:
 
     # 5 - update ui and clock
     self._update_ui()
-    self.clok.tick(SPEED)
+    self.clock.tick(SPEED)
