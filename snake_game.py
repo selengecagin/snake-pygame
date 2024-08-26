@@ -129,3 +129,5 @@ class SnakeGame:
         y += BLOCK_SIZE
     elif direction == Direction.UP:
         y -= BLOCK_SIZE
+
+        self.head = Point(x, y)
